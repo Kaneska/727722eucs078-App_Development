@@ -1,0 +1,76 @@
+.loanOffers {
+  padding: 50px 0;
+}
+
+.loanOffers .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.loanOffers .content {
+  display: grid;
+  gap: 20px;
+}
+
+.loanOffers .grid3 {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.loanOffers .box {
+  background-color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.5s;
+}
+
+.loanOffers .box .img {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.loanOffers .box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.loanOffers .box .show {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s;
+}
+
+.loanOffers .box:hover {
+  background-color: #1eb2a6;
+  color: #fff;
+}
+
+.loanOffers .box:hover .show {
+  opacity: 1;
+}
+
+.loanOffers h1 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 20px 0;
+  line-height: 30px;
+}
+
+.loanOffers span {
+  background-color: #f8f8f8;
+  padding: 5px 20px;
+  font-weight: 500;
+  font-size: 15px;
+  color: #1eb2a6;
+  border-radius: 5px;
+}
